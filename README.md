@@ -45,7 +45,7 @@ Your app ──► your backend ──► POST /api/customers/liveness/v2/initia
 | --- | --- |
 | Flutter | 3.27 (tested on 3.27.4 and 3.50.1) |
 | Dart | 3.6 |
-| Android | API 21 |
+| Android | API 24 (Android 7.0) |
 | iOS | 12.0 |
 
 ## Install
@@ -68,7 +68,7 @@ Add the camera permission to `android/app/src/main/AndroidManifest.xml`:
 </manifest>
 ```
 
-`minSdk` must be 21 or higher (Flutter's default of 24 is fine).
+`minSdk` must be 24 or higher, which is already the default for new Flutter apps.
 
 ### iOS
 
