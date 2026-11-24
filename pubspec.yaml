@@ -1,0 +1,35 @@
+name: afihan_trueface_liveness
+description: >-
+  Native-feeling Afihan TrueFace liveness check for Flutter on Android and iOS,
+  with camera permissions, typed results and automatic return to your app.
+version: 0.1.0
+repository: https://github.com/mikeeolar/afihan_trueface_liveness
+issue_tracker: https://github.com/mikeeolar/afihan_trueface_liveness/issues
+topics:
+  - liveness
+  - kyc
+  - identity-verification
+  - face-verification
+  - webview
+
+environment:
+  sdk: ^3.6.0
+  flutter: ">=3.27.0"
+
+platforms:
+  android:
+  ios:
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_inappwebview: ^6.1.5
+  meta: ^1.15.0
+  permission_handler: ^13.0.2
+
+dev_dependencies:
+  fake_async: ^1.3.1
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+  permission_handler_platform_interface: ^4.3.0

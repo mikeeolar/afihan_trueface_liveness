@@ -1,0 +1,22 @@
+name: afihan_trueface_liveness_example
+description: Demonstrates how to run an Afihan TrueFace liveness check.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.14.0
+
+dependencies:
+  afihan_trueface_liveness:
+    path: ../
+  flutter:
+    sdk: flutter
+  material_ui: ^1.1.0
+
+dev_dependencies:
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
