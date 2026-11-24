@@ -1,7 +1,11 @@
 import 'dart:convert';
 
 import 'package:afihan_trueface_liveness/afihan_trueface_liveness.dart';
-import 'package:material_ui/material_ui.dart';
+// Flutter 3.47 and later move Material to the material_ui package. The
+// example keeps the classic import so it runs on every supported Flutter
+// version (3.27 and later).
+// ignore: deprecated_member_use
+import 'package:flutter/material.dart';
 
 void main() => runApp(const ExampleApp());
 
@@ -131,25 +135,25 @@ class _ResultCard extends StatelessWidget {
   Widget build(BuildContext context) {
     final (icon, color, title) = switch (result.status) {
       AfihanLivenessStatus.passed => (
-        Icons.verified_rounded,
-        Colors.green,
-        'Passed',
-      ),
+          Icons.verified_rounded,
+          Colors.green,
+          'Passed',
+        ),
       AfihanLivenessStatus.failed => (
-        Icons.highlight_off_rounded,
-        Colors.red,
-        'Failed',
-      ),
+          Icons.highlight_off_rounded,
+          Colors.red,
+          'Failed',
+        ),
       AfihanLivenessStatus.cancelled => (
-        Icons.close_rounded,
-        Colors.grey,
-        'Cancelled',
-      ),
+          Icons.close_rounded,
+          Colors.grey,
+          'Cancelled',
+        ),
       AfihanLivenessStatus.error => (
-        Icons.error_outline_rounded,
-        Colors.orange,
-        'Could not run: ${result.errorReason?.name}',
-      ),
+          Icons.error_outline_rounded,
+          Colors.orange,
+          'Could not run: ${result.errorReason?.name}',
+        ),
     };
     return Card(
       child: ListTile(

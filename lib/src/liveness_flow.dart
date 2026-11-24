@@ -9,7 +9,6 @@ import 'liveness_session.dart';
 import 'navigation_policy.dart';
 
 /// The visible phase of a liveness check.
-@internal
 enum LivenessPhase {
   /// Asking for camera access.
   preparingCamera,
@@ -35,7 +34,6 @@ enum LivenessPhase {
 /// The web view feeds it page events, bridge messages and navigations, and it
 /// decides what the user sees and when the check is over. [onFinish] is
 /// called exactly once.
-@internal
 class LivenessFlow extends ChangeNotifier {
   /// Creates the flow.
   LivenessFlow({

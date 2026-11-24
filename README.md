@@ -39,6 +39,15 @@ Your app ──► your backend ──► POST /api/customers/liveness/v2/initia
           └─► returns AfihanLivenessResult to your app
 ```
 
+## Requirements
+
+| | Minimum |
+| --- | --- |
+| Flutter | 3.27 (tested on 3.27.4 and 3.50.1) |
+| Dart | 3.6 |
+| Android | API 21 |
+| iOS | 12.0 |
+
 ## Install
 
 ```yaml
